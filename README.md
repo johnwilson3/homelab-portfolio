@@ -8,14 +8,14 @@ My approach to this lab is guided by three core principles:
 
 1. **Business Continuity First:** The network must be 100% stable and secure for critical tasks, like supporting my wife's remote work. Uptime is not optional.
     
-2. **Security by Design:** The architecture is built on a multi-layered, zero-trust model, from network segmentation to application identity management.
+2. **Security by Design:** The architecture is built on a multi-layered security model, implementing Zero Trust principles like strong identity and device authentication from the network edge to the application level.
     
 3. **Automate Everything:** If a task has to be done more than once, it should be automated. The goal is a resilient, repeatable, and easily managed infrastructure.
     
 
 ### High-Level Architecture
 
-This diagram illustrates the flow of traffic and the core security layers of the lab. All external traffic is proxied through Cloudflare, with Traefik managing ingress and Authentik handling identity and authorization before a user can even reach a service.
+This diagram illustrates the flow of traffic and the core security layers of the lab. All external traffic is proxied through **Cloudflare, which enforces strict mTLS client certificate authentication at the edge**, blocking unauthorized devices before they can reach my network. For authorized traffic, Traefik manages ingress, and Authentik handles granular, user-level identity and authorization for each service.
 
 ```mermaid
 graph TD
@@ -61,10 +61,11 @@ graph TD
 |**Planned Upgrade**|Custom Build (Ryzen 5 9600X, 64GB DDR5 ECC)|**(In Staging)** Future primary node in Fractal Define R5 case.|
 |**Storage (Primary)**|5x 12TB HDDs in ZFS|Bulk storage for media, backups, and archives, managed by TrueNAS.|
 
-#### Networking
+#### Networking & Edge Security
 
 |Component|Make/Model|Role / Purpose|
 |---|---|---|
+|**Edge Security**|Cloudflare|DNS, caching, proxy, and **mTLS client certificate enforcement**.|
 |**Gateway / Router**|Ubiquiti UCG Fiber|Core routing, firewall, and traffic management.|
 |**Switches**|Ubiquiti USW Flex (2.5G/10G) & USW Flex Mini|Manages network traffic and VLANs across the infrastructure.|
 |**Wireless**|2x Ubiquiti U7 Wall Pro APs|Provides segmented Wi-Fi access for Primary, Guest, and IoT networks.|
