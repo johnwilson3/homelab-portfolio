@@ -92,7 +92,7 @@ This section serves as a living document and a portfolio of completed projects.
         
 - **[OS Admin] In-Place Upgrade from Debian 12 to 13** - `(Complete: Sept 2025)`
     
-    - _Read the full AAR here:_ [`./project-debian-upgrade-2025-09/Debian_Upgrade_AAR.md`](https://www.google.com/search?q=./project-debian-upgrade-2025-09/Debian_Upgrade_AAR.md "null")
+    - _Read the full AAR here:_ [`./project-debian-upgrade-2025-09/Debian_Upgrade_AAR.md`](./project-debian-upgrade-2025-09/Debian_Upgrade_AAR.md "null")
         
 - **[Migration] Primary Server Hardware Refresh (P520 to Fractal)** - `(In Progress)`
     
