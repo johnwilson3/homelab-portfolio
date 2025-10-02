@@ -88,7 +88,7 @@ This section serves as a living document and a portfolio of completed projects.
 
 - **[Deployment] Proxmox Backup Server & Architectural Hardening** - `(Complete: Sept 2025)`
     
-    - _Read the full AAR here:_ [`./project-pbs-deployment-2025-09/PBS_Deployment_AAR.md`](https://www.google.com/search?q=./project-pbs-deployment-2025-09/PBS_Deployment_AAR.md "null")
+    - _Read the full AAR here:_ [`./project-pbs-deployment-2025-09/PBS_Deployment_AAR.md`](./project-pbs-deployment-2025-09/PBS_Deployment_AAR.md "null")
         
 - **[OS Admin] In-Place Upgrade from Debian 12 to 13** - `(Complete: Sept 2025)`
     
