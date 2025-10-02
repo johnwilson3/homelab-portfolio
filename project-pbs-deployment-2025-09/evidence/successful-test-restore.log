@@ -1,1 +1,9 @@
-**pending upload**  
+recovering backed-up configuration from 'pbs-nas:backup/ct/105/2025-10-01T05:00:00Z'
+  Logical volume "vm-350-disk-0" created.
+Creating filesystem with 2097152 4k blocks and 524288 inodes
+Filesystem UUID: e12e318b-7739-4ba0-a723-7a86e98a3bf3
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+restoring 'pbs-nas:backup/ct/105/2025-10-01T05:00:00Z' now..
+merging backed-up and given configuration..
+TASK OK
